@@ -51,6 +51,7 @@ I learned how to use media query and using figma to gather necessary information
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)
 - [W3schools](https://www.w3schools.com/cssref/atrule_media.php)
+- [Slaying The Dragon - Youtube](https://youtu.be/K24lUqcT0Ms?si=7SrrsfPT9flC6K42)
 
 ## Author
 
