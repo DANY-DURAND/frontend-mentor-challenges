@@ -26,11 +26,12 @@ body{
     padding: 18px;
     border-radius: 15px;
     box-shadow: 5px 5px;
-    width: 18rem;
+    width: 20rem;
     border: 1px solid black;
 }
 
 .banner{
+    width: 20rem;
     border-radius: 8px;
     margin-bottom: 10px;
 }
