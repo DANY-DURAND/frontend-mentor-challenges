@@ -23,8 +23,8 @@ body{
 
 #container{
     background-color: var(--White);
-    padding: 18px;
-    border-radius: 15px;
+    padding: 1.25rem;
+    border-radius: 1rem;
     box-shadow: 8px 8px;
     width: 20rem;
     border: 1px solid var(--Gray-950);
@@ -45,7 +45,7 @@ span{
     justify-content: center;
     align-items: center;
     width: 30%;
-    height: 30px;
+    height: 4vh;
     /* padding: 7.5px; */
     border-radius: 5px;
     background-color: var(--Yellow);
@@ -54,7 +54,7 @@ span{
 }
 
 .published{
-    margin: 15px 0px;
+    margin: 1rem 0px;
 }
 
 .published span{
@@ -101,3 +101,4 @@ p{
     font-size: 14px;
     font-weight: 900;
 }
+
