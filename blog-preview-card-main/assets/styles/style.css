@@ -84,3 +84,20 @@ p{
     font-size: 16px;
     margin: 12px 0px;
 }
+
+.details{
+    display: flex;
+    align-items: center;
+    padding: 12px 0px 6px;
+}
+
+.details img{
+    width: 32px;
+    height: 32px;
+    padding-right: 15px;
+}
+
+.details span{
+    font-size: 14px;
+    font-weight: 900;
+}
