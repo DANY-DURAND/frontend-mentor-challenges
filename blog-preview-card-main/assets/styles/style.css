@@ -58,6 +58,7 @@ span{
 
 .published span{
     font-weight: 600;
+    color: var(--Gray-950);
 }
 
 h1{
@@ -65,4 +66,11 @@ h1{
     font-size: 24px;
     font-weight: 900;
     margin-bottom: 15px;
+}
+
+p{
+    /* font-weight: 100; */
+    color: var(--Gray-500);
+    font-size: 16px;
+    margin: 12px 0px;
 }
