@@ -5,6 +5,11 @@
     --Gray-950: hsl(0, 0%, 7%)
 }
 
+* {
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+}
+
 body{
     background-color: var(--Yellow);
     margin: 0;
