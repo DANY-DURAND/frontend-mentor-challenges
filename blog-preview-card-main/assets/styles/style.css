@@ -1,3 +1,28 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%)
+}
+
 body{
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--Yellow);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#container{
+    background-color: var(--White);
+    padding: 15px;
+    border-radius: 15px;
+    /* box-shadow: ; */
+    width: 17rem;
+}
+
+span{
+    display: block;
+    padding-top: 10px;
 }
