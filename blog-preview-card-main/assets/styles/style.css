@@ -102,3 +102,26 @@ p{
     font-weight: 900;
 }
 
+@media (max-width: 375px){
+    
+    #container{
+        width: 18rem;
+        border: 1px solid var(--Gray-950);
+    }
+
+    .banner{
+        width: 18rem;
+    }
+
+    .published span{
+        font-size: 0.80rem;
+    }
+
+    h1{
+        font-size: 1.30rem;
+    }
+
+    p{
+        font-size: 0.90rem;
+    }
+}
