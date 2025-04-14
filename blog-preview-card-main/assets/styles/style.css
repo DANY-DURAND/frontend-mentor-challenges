@@ -74,6 +74,10 @@ h1 a{
     color: black;
 }
 
+h1 a:hover{
+    color: var(--Yellow);
+}
+
 p{
     /* font-weight: 100; */
     color: var(--Gray-500);
