@@ -7,7 +7,7 @@
 }
 
 *{
-    background-color: var(--Grey-900);
+    
     color: var(--White);
     font-family: "Figtree";
     margin: 0;
@@ -19,9 +19,25 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-size: 16px;
+    background-color: var(--Grey-900);
 }
 
-main{
-    background-color: var(--Grey-700);
-    width: 20rem;
+#container{
+    background-color: var(--Grey-800);
+    width: 15rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    
+}
+
+.avatar{
+    width: 4rem;
+    border-radius: 50%;
+    padding-bottom: 12px;
 }
