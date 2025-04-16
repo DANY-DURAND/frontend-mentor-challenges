@@ -56,4 +56,4 @@ I reinforced the knowledge of flexbox, media query, and what I learned in the pr
 ## Author
 
 - Frontend Mentor - [@DANY-DURAND](https://www.frontendmentor.io/profile/DANY-DURAND)
-- Twitter - [@nzigamasabo_du](https://www.twitter.com/nzigamasabo_du)
+- X - [@nzigamasabo_du](https://www.x.com/nzigamasabo_du)
