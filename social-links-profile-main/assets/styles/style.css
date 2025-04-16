@@ -8,7 +8,7 @@
 
 *{
     color: var(--White);
-    font-family: "Figtree";
+    font-family: "Figtree", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@ body{
 
 #container{
     background-color: var(--Grey-800);
-    width: 15rem;
+    width: 20rem;
     height: auto;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -37,8 +37,21 @@ body{
     align-items: center;
 }
 
+.details *{
+    padding: 12px 0px 0px;
+}
+
 .avatar{
-    width: 5rem;
+    width: 6rem;
     border-radius: 50%;
+}
+
+.author{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.location{
+    color: var(--Green);
     padding-bottom: 12px;
 }
