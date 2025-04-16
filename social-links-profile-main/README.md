@@ -44,12 +44,13 @@ Users should be able to:
 
 ### What I learned
 
-I reinforced the knowledge of flexbox, media query, and what I learned in the previous challenge.
+I reinforced the knowledge of flexbox, media query, and what I learned in the previous challenge. I also learned about button styling and animation.
 
 ### Useful resources
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)
 - [W3schools](https://www.w3schools.com/cssref/atrule_media.php)
+- [W3schools CSS Button](https://www.w3schools.com/css/css3_buttons.asp) - I used it to learn about button styling and animation.
 - [Slaying The Dragon - Youtube](https://youtu.be/K24lUqcT0Ms?si=7SrrsfPT9flC6K42)
 
 ## Author
