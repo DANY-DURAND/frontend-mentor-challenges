@@ -57,7 +57,7 @@ div{
 }
 
 .description{
-    /* color: var(--Grey-700); */
+    color: whitesmoke;
     font-weight: 500;
     padding-bottom: 1.5rem;
 }
