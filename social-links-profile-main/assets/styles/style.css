@@ -59,7 +59,7 @@ div{
 .description{
     color: whitesmoke;
     font-weight: 400;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.0rem;
 }
 
 a{
@@ -73,5 +73,5 @@ button{
     margin: 7px 0px;
     font-weight: 800;
     border: 0px;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
