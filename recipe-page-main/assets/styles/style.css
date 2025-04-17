@@ -34,6 +34,7 @@ body{
     background-color: var(--White);
     padding: 2rem;
     border-radius: 0.9rem;
+    margin: 5% 0%;
 }
 
 .banner img{
