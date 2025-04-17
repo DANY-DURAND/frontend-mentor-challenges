@@ -82,7 +82,7 @@ p, li, td, h3{
     padding: 0.25rem 0rem;
 }
 
-.preparation span{
+span{
     font-weight: 800;
 }
 
@@ -91,8 +91,8 @@ h2{
     padding: 1.25rem 0rem;
 }
 
-.ingredients{
-    padding-bottom: 1.5rem;
+.ingredients, .instructions{
+    padding-bottom: 1.25rem;
 }
 
 .ingredients li, .instructions li{
@@ -105,4 +105,22 @@ h2{
 
 hr{
     border-top: 0px solid var(--Stone-100);
+}
+.instructions ol {
+    counter-reset: item;
+    margin-left: 0;
+    padding-left: 0;
+}
+.instructions li{
+    display: block;
+    margin-bottom: .5em;
+    margin-left: 2em;
+}
+
+.instructions li::before{
+    display: inline-block;
+    content: counter(item) ".";
+    counter-increment: item;
+    width: 2em;
+    margin-left: -2em;
 }
