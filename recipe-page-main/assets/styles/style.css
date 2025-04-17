@@ -21,7 +21,7 @@ html, body{
 }
 
 body{
-    background-color: var(--Stone-150);
+    background-color: #F3E6D8;
     display: flex;
     justify-content: center;
     align-items: center;
