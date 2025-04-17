@@ -124,3 +124,28 @@ hr{
     width: 2em;
     margin-left: -2em;
 }
+
+.nutrition p{
+    padding-bottom: 1rem;
+}
+.nutrition span{
+    color: var(--Brown-800);
+    font-weight: 700;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    border-bottom: 1px solid var(--Stone-100); 
+    vertical-align: middle;
+    padding: 0.5rem 0rem;
+    text-indent: 1.5rem;
+}
+
+
+
+.last-row{
+    border: none;
+}
