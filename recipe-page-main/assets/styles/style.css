@@ -145,8 +145,40 @@ td{
     text-indent: 1.5rem;
 }
 
-
-
 .last-row{
     border: none;
+}
+
+@media(max-width:375px){
+    /* *{
+        margin: 0;
+        padding: 0;
+    } */
+    body{
+        background-color: #F3E6D8;
+        width: 100%; 
+        height: auto;
+        
+    }
+
+    #container{
+      padding: 0rem;
+      margin: 0;
+    }
+
+    .banner img{
+        border-radius: 0rem;
+    }
+
+    h1, h2{
+        margin: 0;
+        padding: 0;
+        font-weight: 800;
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .description, .ingredients, .nutrition{
+        margin: 0rem 2rem;
+    }
 }
