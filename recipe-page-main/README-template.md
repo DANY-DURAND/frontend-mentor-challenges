@@ -20,12 +20,13 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/Desktop_view_solution.jpeg)
+![](./assets/images/Mobile_view_solution.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/DANY-DURAND/frontend-mentor-challenges/tree/main/recipe-page-main)
+- Live Site URL: [Live URL](https://blog-card-frm.netlify.app/recipe-page-main)
 
 ## My process
 
