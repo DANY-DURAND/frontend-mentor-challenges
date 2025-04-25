@@ -107,3 +107,6 @@ body{
     padding-right: 0.75rem;
 }
 
+.btn-add-to-cart:hover{
+    background-color: var(--Green-700);
+}
