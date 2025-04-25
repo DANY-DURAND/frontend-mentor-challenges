@@ -49,11 +49,14 @@ body{
 }
 
 .product-category h2,
-.product-specifics .product-description{
+.product-specifics .product-description, 
+.old-price{
     font-family: "Montserrat";
     font-weight: 300;
     color: var(--Grey);
 }
+
+
 
 .product-category h2{
     text-transform: uppercase;
@@ -62,9 +65,45 @@ body{
 .product-specifics .product-name{
     font-family: "Fraunces";
     font-weight: 700;
+    padding-right: 1.25rem;
 }
 
 .product-specifics .product-description{
-    /* font-weight: 500; */
+    font-weight: 500;
     line-height: 1.75;
 }
+
+.price{
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.price .current-price{
+    color: var(--Green-500);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Fraunces";
+    padding-right: 1rem;
+}
+
+.price .old-price{
+    color: var(--Grey);
+}
+
+.btn-add-to-cart{
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    color: var(--White);
+    background-color: var(--Green-500);
+    font-family: "Montserrat";
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+.btn-add-to-cart img{
+    padding-right: 0.75rem;
+}
+
