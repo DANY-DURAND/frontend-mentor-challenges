@@ -9,3 +9,62 @@
     --Cream: hsl(30, 38%, 92%);
     --White: hsl(0, 0%, 100%)
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Cream);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container{
+    width: 35rem;
+    background-color: var(--White);
+    border-radius: 0.5rem;
+    display: flex;
+}
+
+.product-image img{
+    width: 17.5rem;
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.product-details{
+    padding: 1.5rem;
+}
+
+.product-category *,
+.product-specifics *,
+.product-action-details{
+    padding-bottom: 1rem;
+}
+
+.product-category h2,
+.product-specifics .product-description{
+    font-family: "Montserrat";
+    font-weight: 300;
+    color: var(--Grey);
+}
+
+.product-category h2{
+    text-transform: uppercase;
+}
+
+.product-specifics .product-name{
+    font-family: "Fraunces";
+    font-weight: 700;
+}
+
+.product-specifics .product-description{
+    /* font-weight: 500; */
+    line-height: 1.75;
+}
