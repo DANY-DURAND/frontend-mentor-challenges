@@ -33,6 +33,7 @@ body{
 }
 
 .product-image img{
+    display: block;
     width: 17.5rem;
     height: 100%;
     border-radius: 0.5rem 0 0 0.5rem;
@@ -109,4 +110,21 @@ body{
 
 .btn-add-to-cart:hover{
     background-color: var(--Green-700);
+}
+
+@media (max-width: 375px){
+    body{
+        /* display: inherit; */
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+    }
+    .container{
+        display: block;
+        max-width: 37.5rem;
+        max-height: 28.5rem;
+    }
+    .product-image img{
+        height: 40%;
+    }
 }
