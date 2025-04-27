@@ -133,12 +133,7 @@ body{
     }
 
     .product-details {
-        padding: 1rem;
-    }
-
-    .price {
-        flex-direction: row;
-        /* align-items: flex-start; */
+        padding: 1.5rem;
     }
 
     .price .current-price {
