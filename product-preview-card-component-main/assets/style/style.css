@@ -40,7 +40,7 @@ body{
 }
 
 .product-details{
-    padding: 1.5rem;
+    padding: 1.25rem;
 }
 
 .product-category *,
@@ -49,7 +49,7 @@ body{
     padding-bottom: 1rem;
 }
 
-.product-category h2,
+.product-category h3,
 .product-specifics .product-description, 
 .old-price{
     font-family: "Montserrat";
@@ -59,7 +59,7 @@ body{
 
 
 
-.product-category h2{
+.product-category h3{
     text-transform: uppercase;
 }
 
