@@ -73,3 +73,16 @@ h2{
     display: flex;
     justify-content: flex-end;
 }
+
+.box-supervisor{
+    border-top: 0.35rem solid var(--Cyan);
+}
+.box-team-builder{
+    border-top: 0.35rem solid var(--Red);
+}
+.box-karma{
+    border-top: 0.35rem solid var(--Orange);
+}
+.box-calculator{
+    border-top: 0.35rem solid var(--Blue);
+}
