@@ -58,9 +58,18 @@ h2{
 
 .box{
     width: 25rem;
-    height: 14rem;
+    height: 15rem;
     margin: 1rem;
-    padding: 1.5rem;
+    padding: 1.75rem;
     /* box-shadow: 0.5rem 0.5rem var(--Grey-400); */
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.box *{
+    padding: 0.25rem;
+}
+
+.box .icon{
+    display: flex;
+    justify-content: flex-end;
 }
