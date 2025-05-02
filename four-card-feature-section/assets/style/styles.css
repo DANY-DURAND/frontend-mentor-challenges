@@ -54,6 +54,11 @@ h2{
 
 .container{
     margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 2rem; /* Add spacing between boxes */
+    justify-items: center; /* Center items horizontally */
 }
 
 .box{
@@ -61,6 +66,7 @@ h2{
     height: 15rem;
     margin: 1rem;
     padding: 1.75rem;
+    border-radius: 0.5rem;
     /* box-shadow: 0.5rem 0.5rem var(--Grey-400); */
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
@@ -76,13 +82,21 @@ h2{
 
 .box-supervisor{
     border-top: 0.35rem solid var(--Cyan);
+    grid-column: 1 / 2; /* Place in the first column */
+    grid-row: 1 / 2; /* Place in the first row */
 }
 .box-team-builder{
     border-top: 0.35rem solid var(--Red);
+    grid-column: 2 / 3; /* Place in the second column */
+    grid-row: 1 / 2; /* Place in the first row */
 }
 .box-karma{
     border-top: 0.35rem solid var(--Orange);
+    grid-column: 2 / 3; /* Place in the second column */
+    grid-row: 2 / 3; /* Place in the second row */
 }
 .box-calculator{
     border-top: 0.35rem solid var(--Blue);
+    grid-column: 3 / 4; /* Place in the third column */
+    grid-row: 2 / 3; /* Place in the second row */
 }
