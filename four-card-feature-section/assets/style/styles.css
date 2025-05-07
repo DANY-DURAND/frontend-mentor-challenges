@@ -60,7 +60,7 @@ h2{
 
     /* Two rows */
     grid-template-rows: 1fr;
-    gap: 1.875rem; /* Add spacing between boxes */
+    /* gap: 1rem; */
     justify-items: center; 
     place-content: center;
     /* Center items horizontally */
