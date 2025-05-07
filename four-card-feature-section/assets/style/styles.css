@@ -118,3 +118,36 @@ h2{
     align-self: center;
     justify-self: flex-start;
 }
+
+@media(max-width: 375px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box{
+        width: 20rem;
+    }
+
+    body{
+        margin: 2rem;
+    }
+
+    header{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    header h2{
+        font-size: 1.5rem;
+    }
+
+    /* .box{
+        margin: 0 1rem;
+    } */
+
+    .box p{
+        font-size: 0.75rem;
+    }
+}
