@@ -122,6 +122,12 @@ h2{
 @media(max-width: 950px) {
     body{
         min-height: 100vh;
+        padding: 2rem;
+        /* width: 100%; */
+        font-size: 1.25rem;
+    }
+
+    header{
         width: 100%;
     }
     .container{
@@ -132,7 +138,8 @@ h2{
     }
 
     .box{
-        width: 100%;
+        width: 50rem;
+        padding-bottom: 2rem;
     }
 }
 
