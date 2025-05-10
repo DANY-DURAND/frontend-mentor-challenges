@@ -25,5 +25,61 @@ body{
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 13px;
     background-color: var(--Grey-200);
+
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 5rem;
+}
+
+#container{
+    display: grid;
+    justify-content: center;
+    place-content: center;
+    /* height: 100vh; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    margin: auto;
+}
+
+.testimonial{
+    /* margin: 2rem; */
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.testimonial div{
+    padding-bottom: 0.5rem;
+}
+
+
+.testimonial-1{
+    color: var(--White);
+    background-color: var(--Purple-500);
+    grid-column: 1 / span 2;
+}
+
+.testimonial-2{
+    color: var(--White);
+    background-color: var(--Grey-500);
     
+}
+
+.testimonial-3, .testimonial-5{
+    color: var(--Grey-500);
+    background-color: var(--White);
+}
+
+.testimonial-5{
+    grid-column: 4;
+    grid-row: 1 / span 2;
+}
+
+.testimonial-4{
+    background-color: var(--Dark-blue);
+    color: var(--White);
+    grid-column: 2 / span 2;
 }
