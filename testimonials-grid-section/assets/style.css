@@ -31,7 +31,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0 5rem;
+    margin: 2rem 5rem;
 }
 
 #container{
@@ -133,9 +133,12 @@ body{
 }
 
 @media (max-width: 850px) {
+    body{
+        margin: 2rem 1.5rem;
+    }
     #container{
     display: flex;
     flex-direction: column;
-       
+    width: 100%;
     }
 }
