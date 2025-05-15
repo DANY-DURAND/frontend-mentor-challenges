@@ -65,6 +65,9 @@ body{
     background-repeat: no-repeat;
     background-position: 85% top;
 }
+.testimonial-1 img{
+    border: 0.25rem solid var(--Purple-300);
+}
 
 .testimonial-2{
     color: var(--White);
@@ -86,6 +89,9 @@ body{
     background-color: var(--Dark-blue);
     color: var(--White);
     grid-column: 2 / span 2;
+}
+.testimonial-4 img{
+    border: 0.25rem solid var(--Purple-300);
 }
 
 .author{
@@ -127,5 +133,8 @@ body{
 }
 
 @media screen and (max-width: 53.125rem) {
-    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
 }
