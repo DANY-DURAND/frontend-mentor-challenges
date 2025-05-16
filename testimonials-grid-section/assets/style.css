@@ -25,19 +25,21 @@ body{
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 13px;
     background-color: var(--Grey-200);
+    
 
     /*  */
     display: grid;
     justify-content: center;
     place-items: center;
-    margin: 2rem 5rem;
+    /* margin: 2rem 0rem; */
+    height: 100vh;
 }
 
 #container{
+    width: 80%;
     display: grid;
     justify-content: center;
     place-content: center;
-    height: 100vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 1.5rem;
@@ -134,6 +136,7 @@ body{
 @media (max-width: 850px) {
     body{
         margin: 2rem 1.5rem;
+        height: auto;
     }
     #container{
     display: flex;
