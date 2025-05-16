@@ -27,10 +27,9 @@ body{
     background-color: var(--Grey-200);
 
     /*  */
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    place-items: center;
     margin: 2rem 5rem;
 }
 
