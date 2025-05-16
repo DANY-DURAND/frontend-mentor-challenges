@@ -37,7 +37,7 @@ body{
     display: grid;
     justify-content: center;
     place-content: center;
-    /* height: 100vh; */
+    height: 100vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 1.5rem;
