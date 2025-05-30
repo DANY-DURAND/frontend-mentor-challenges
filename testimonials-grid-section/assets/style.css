@@ -41,7 +41,8 @@ body{
     justify-content: center;
     place-content: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-rows: auto;
     gap: 1.5rem;
     margin: auto;
 }
