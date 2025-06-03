@@ -33,13 +33,30 @@ main{
 .product-image img{
     border-radius: 0.5rem 0 0 0.5rem;
     border: none;
+    width: 285px;
+    height: 280px;
 }
 
 .description{
-    background-color: white;
-    padding: 2rem;
+    background-color: #ffffff;
+    padding: 2rem 2.5rem;
     height: 280px;
     border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.heading{
+    color: var(--DarkGrayishBlue);
+    /* font-size: 1.25rem; */
+    text-wrap: wrap;
+    margin-bottom: .75rem;
+    font-weight: 700;
+}
+
+.details{
+    color: var(--DesaturatedDarkBlue);
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
 }
 
 
