@@ -63,10 +63,43 @@ main{
 .profile{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+}
 
+.profile img{
+    border-radius: 50%;
+}
+
+.article-publisher{
+    margin-left: 1rem;
+    cursor: pointer;
 }
 
 
 
+
+.share{
+    background-color: var(--LightGrayishBlue);
+    padding: 0.25rem;
+    border-radius: 50%;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.social {
+  box-shadow: 0 0.625rem 0.625rem 0 rgba(201, 213, 225, 0.5);
+  background-color: var(--Very-Dark-Grayish-Blue);
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 1rem 2rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
 
