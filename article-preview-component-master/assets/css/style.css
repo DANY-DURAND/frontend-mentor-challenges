@@ -20,6 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    
 }
 
 .article-card{
@@ -53,6 +54,31 @@ body{
 
 .article-heading{
     font-size: 20px;
+    color: var(--DarkGrayishBlue);
+    line-height: 1.4;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+.article-text{
+    color: var(--GrayishBlue);
+    line-height: 1.5;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.article-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-info{
+    display: flex;
+}
+
+
+.hidden{
+    visibility: hidden;
 }
 
 .social {
