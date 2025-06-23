@@ -14,92 +14,61 @@
 }
 
 body{
-    font-size: 13px;
-    font-family: "Manrope", sans-serif;
+    font-family: 'Manrope', sans-serif;
     background-color: var(--LightGrayishBlue);
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
-main{
+.article-card{
+    background-color: #fff;
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    height: 100vh;
-    width: 50rem;
-    box-shadow: 0.2 solid black;
+    max-width: 730px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
-.product-image img{
-    border-radius: 0.5rem 0 0 0.5rem;
-    border: none;
-    width: 285px;
-    height: 280px;
+.article-image{
+    width: 40%;
 }
 
-.description{
-    background-color: #ffffff;
-    padding: 2rem 2.5rem;
-    height: 280px;
-    border-radius: 0 0.5rem 0.5rem 0;
+.article-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.heading{
-    color: var(--DarkGrayishBlue);
-    font-size: 1.5rem;
-    text-wrap: wrap;
-    margin-bottom: .75rem;
-    font-weight: 700;
-}
-
-.details{
-    color: var(--DesaturatedDarkBlue);
-    font-size: 1rem;
-    margin-bottom: 1.25rem;
-    font-weight: 500;
-}
-
-.profile{
+.article-content{
+    padding: 2.5rem 2.0rem;
+    width: 60%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.profile img{
-    border-radius: 50%;
-}
-
-.article-publisher{
-    margin-left: 1rem;
-    cursor: pointer;
-}
-
-
-
-
-.share{
-    background-color: var(--LightGrayishBlue);
-    padding: 0.25rem;
-    border-radius: 50%;
-}
-
-.hidden{
-    visibility: hidden;
+.article-heading{
+    font-size: 20px;
 }
 
 .social {
-  box-shadow: 0 0.625rem 0.625rem 0 rgba(201, 213, 225, 0.5);
-  background-color: var(--Very-Dark-Grayish-Blue);
-  display: flex;
-  align-items: center;
-  padding: 1rem 1rem 1rem 2rem;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  border-bottom-left-radius: 0.625rem;
-  border-bottom-right-radius: 0.625rem;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, 0);
+    background: var(--DarkGrayishBlue);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    z-index: 10;
 }
-
