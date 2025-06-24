@@ -101,9 +101,33 @@ body{
     border-radius: 50%;
     background-color: var(--LightGrayishBlue);
 }
+.share-button:hover{
+    background-color: var(--DarkGrayishBlue);
+}
 
 .hidden{
     visibility: hidden;
+}
+
+.share-options{
+    background-color: var(--DarkGrayishBlue);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    display: flex;
+    /* justify-content: space-arou; */
+    align-items:center;
+    gap: 1.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    color: var(--GrayishBlue);
+    position: absolute;
+    left: 65%;
+    bottom: 43%;
+    /* transform: translate(-50%, 0); */
+    letter-spacing: 0.3em;
+    z-index: 10;
+}
+.share-options img{
+
 }
 
 .social {
@@ -116,7 +140,7 @@ body{
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     border-radius: 0.75rem;
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     font-size: 1rem;
