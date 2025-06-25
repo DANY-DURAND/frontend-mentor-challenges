@@ -108,7 +108,7 @@ body{
     cursor: pointer;
 }
 
-.share-button img{
+.share-button svg{
     fill: hsl(214, 17%, 51%); /* Desaturated Dark Blue */
     transition: fill 0.2s ease;
 }
@@ -116,11 +116,6 @@ body{
 .share-button.active{
     background-color: var(--DarkGrayishBlue);
 }
-
-.share-button.active img{
-    fill: #fff; /* White */
-}
-
 
 .hidden{
     visibility: hidden;
@@ -143,6 +138,7 @@ body{
     letter-spacing: 0.3em;
     z-index: 10;
 }
+
 .share-options img{
      width: 20px;
     height: 20px;
@@ -155,20 +151,3 @@ body{
      filter: brightness(0) saturate(100%) invert(80%) sepia(10%) saturate(1474%) hue-rotate(180deg) brightness(101%) contrast(100%); 
 }
 
-/* .social {
-    position: absolute;
-    left: 50%;
-    bottom: 100%;
-    transform: translate(-50%, 0);
-    background: var(--DarkGrayishBlue);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 0.5rem 2rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    font-size: 1rem;
-    letter-spacing: 0.3em;
-    z-index: 10;
-} */
