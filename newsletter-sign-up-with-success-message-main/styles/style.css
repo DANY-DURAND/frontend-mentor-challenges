@@ -18,7 +18,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     /* font-size: 16px; */
-    background-color: var(--Blue-800);
+    background-color: var(--Blue-700);
     color: var(--Blue-700);
 
     display: flex;
@@ -44,11 +44,12 @@ body{
 
 .text{
     margin-bottom: 0.75rem;
+
 }
 
 ul{
-    list-style: url('/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg');
-    
+    list-style-image: url('/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg');
+    padding-left: 1.75rem;
     margin-bottom: 0.75rem;
 }
 
@@ -72,7 +73,7 @@ li:not(:last-child) {
 
 
 img{
-    height: 25rem;
+    height: 27rem;
     width: 17rem;
     object-fit: cover;
     border-radius: 0.5rem;
@@ -80,11 +81,30 @@ img{
 
 .signup-description{
     margin: 2rem;
+    width: 23.5rem;
 }
 
 input#email{
-    padding: 0.75rem;
     width: 20rem;
+    padding: 1em 2em;
+    font-weight: 400;
+    color: var(--Blue-700);
+    border: 1px solid var(--Grey);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 150%;
+}
+
+button[type='submit']{
+    width: 20rem;
+    text-align: center;
+    
+    background-color: var(--Blue-800);
+    color: #fff;
+    padding: 1rem 0rem;
+    border-radius: 0.45rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
 }
 
 .success{
