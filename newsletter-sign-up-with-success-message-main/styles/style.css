@@ -116,3 +116,21 @@ input#email{
 .hidden{
     display: none;
 }
+
+.label{
+    font-size: 13px;
+    font-weight: 900;
+    display: flex;
+    gap: 7rem;
+}
+
+
+
+#email-error{
+    color: var(--Red);
+}
+
+.error-style{
+    color: var(--Red);
+    border: 1px solid var(--Red);
+}
