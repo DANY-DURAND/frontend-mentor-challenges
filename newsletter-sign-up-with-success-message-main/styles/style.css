@@ -22,6 +22,7 @@ body{
     color: var(--Blue-700);
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -97,7 +98,7 @@ input#email{
     line-height: 150%;
 }
 
-button[type='submit']{
+.btn-submit{
     width: 20rem;
     text-align: center;
     
@@ -109,6 +110,9 @@ button[type='submit']{
     font-weight: 500;
 }
 
+/* .success{
+    display: block;
+} */
 .hidden{
-    visibility: hidden;
+    display: none;
 }
