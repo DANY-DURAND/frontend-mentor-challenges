@@ -1,23 +1,43 @@
-const email = document.getElementById('email');
+const emailInput = document.getElementById('email');
+// const emailInputStyle = document.querySelector('.email-input')
 const emailErrorMsg = document.getElementById('email-error');
 const form = document.getElementById('form');
 
 
-const emailRegExp = /^[\w.!#$%&'*+/=?^`{|}~-]+@[a-z\d-]+(?:\.[a-z\d-]+)*$/i;
+const emailRegExp = /^\S+@\S+$/g;
 
-const isValidEmail = () => {
-const validity = email.value.length !== 0 && emailRegExp.test(email.value);
-  return validity;
-};
+function validateEmail(email) {
 
-emailErrorMsg.classList.add('error-msg');
+  if ( !emailRegExp.test(email) && !email) {
+    return false;
+  }
 
-input.classList.add('error-style');
+  return true;
+}
 
-form.addEventListener('submit',(e)=>{
+
+function handleSubmit(e){
+    e.preventDefault(e);
+
+    const formEntry = new FormData(e.target).entries();
     
-})
+    const {email} = Object.fromEntries(formEntry);
+    
+    if (!validateEmail(email)) {
+        emailErrorMsg.innerText = 'Valid Email required'
+        emailErrorMsg.classList.add('error-msg');
+        emailInput.classList.remove('email-input');
+        emailInput.classList.add('error-style');
+        console.log('Invalid email!')
+    }
+    else{
+        console.log("You are successfully registered!");
+        
+    }
 
-function showError() {
+    
     
 }
+
+
+form.addEventListener('submit', handleSubmit)
