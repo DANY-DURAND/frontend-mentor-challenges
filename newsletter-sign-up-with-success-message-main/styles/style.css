@@ -103,6 +103,7 @@ form{
     line-height: 150%;
 }
 
+
 .btn-submit{
     text-align: center;
     background-color: var(--Blue-800);
@@ -133,9 +134,11 @@ form{
     color: var(--Red);
 }
 
-.error-style{
-    
+/* Unified error style for both .error-style and .email-input.error */
+.error-style,
+.email-input.error {
     border: 1px solid var(--Red);
+    color: var(--Red);
     border-radius: 0.45rem;
     letter-spacing: 0.05rem;
     font-weight: 500;
@@ -143,8 +146,60 @@ form{
     font-weight: 400;
     margin-bottom: 1rem;
     line-height: 150%;
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+    opacity: 1;
 }
 
-.error-style::placeholder{
+/* Ensure text is visible inside error input */
+.error-style,
+.email-input.error {
+    background-clip: padding-box;
+}
+
+.error-style::placeholder,
+.email-input.error::placeholder {
     color: var(--Red);
+    opacity: 1;
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    /* width: 50rem; */
+    line-height: 1.5;
+    max-width: 20rem;
+}
+
+.success img{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+.success .heading{
+    font-size: 2.5rem;
+}
+
+.btn-dismiss {
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient(90deg, #ff5478 0%, #ff693e 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 24px 0 rgba(255, 84, 120, 0.15);
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 2rem;
+}
+
+.btn-dismiss:hover,
+.btn-dismiss:focus {
+    background: linear-gradient(90deg, #ff693e 0%, #ff5478 100%);
+    transform: translateY(-2px) scale(1.02);
+    outline: none;
 }
