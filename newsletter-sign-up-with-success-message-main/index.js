@@ -44,7 +44,9 @@ function returnToPage() {
   success.classList.add('hidden');
   subscribedEmail.innerText= 'ash@loremcompany.com';
   container.classList.remove('hidden');
-  emailInput.innerText ='';
+  emailInput.value ='';
+  emailInput.classList.remove('error.style');
+  emailInput.classList.add('email-input')
 }
 
 
