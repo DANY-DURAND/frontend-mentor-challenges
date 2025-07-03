@@ -138,7 +138,6 @@ form{
     color: var(--Red);
 }
 
-/* Unified error style for both .error-style and .email-input.error */
 .error-style,
 .email-input.error {
     border: 1px solid var(--Red);
@@ -154,7 +153,6 @@ form{
     opacity: 1;
 }
 
-/* Ensure text is visible inside error input */
 .error-style,
 .email-input.error {
     background-clip: padding-box;
