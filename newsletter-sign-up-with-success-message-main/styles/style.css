@@ -114,6 +114,13 @@ form{
     font-weight: 500;
 }
 
+.btn-submit:hover{
+    border: none;
+    background: linear-gradient(90deg, #ff693e 0%, #ff5478 100%);
+    transform: translateY(-2px) scale(1.02);
+    outline: none;
+}
+
 /* .success{
     display: block;
 } */
@@ -292,8 +299,6 @@ span.subscribed-email{
         width: 100%;
         box-sizing: border-box;
     }
-
-    
 
     .success{
         height: 100vh;
