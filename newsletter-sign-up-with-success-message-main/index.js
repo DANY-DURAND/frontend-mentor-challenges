@@ -29,7 +29,7 @@ function handleSubmit(e){
         emailErrorMsg.innerText = 'Valid Email required';
         emailInput.classList.remove('email-input');
         emailInput.classList.add('error-style');
-        console.log('Invalid email!')
+        // console.log('Invalid email!')
     } else {
         // console.log("You are successfully registered!");
         // Optionally, submit the form or show a success message
