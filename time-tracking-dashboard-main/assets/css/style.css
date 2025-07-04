@@ -145,7 +145,7 @@ body{
     color: var(--Purple-500);
 }
 
-.report li a:active{
+.active{
     color: var(--Navy-200);
 }
 
