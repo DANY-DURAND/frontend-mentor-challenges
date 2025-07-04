@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    /* Primary */
+    --Purple-600: hsl(246, 80%, 60%);
+    --Orange-300: hsl(15, 100%, 70%);/*  (work)  */
+    --Blue-300: hsl(195, 74%, 62%);/*  (play)  */
+    --Pink-400: hsl(348, 100%, 68%);/*  (study) */
+    --Green-400: hsl(145, 58%, 55%);/*  (exercise) */
+    --Purple-700: hsl(264, 64%, 52%); /*  (social) */
+    --Yellow-300: hsl(43, 84%, 65%); /* (self care) */
+
+    /* Neutral */
+    --Navy-950: hsl(226, 43%, 10%);
+    --Navy-900: hsl(235, 46%, 20%);
+    --Purple-500: hsl(235, 45%, 61%);
+    --Navy-200: hsl(236, 100%, 87%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: var(--Navy-950); */
+    background-color: #0D1323;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.card{
+    width: 11rem;
+    height: auto;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+.card .back{
+    height: 15%;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* padding-right: 1rem;
+    padding-top: 1rem; */
+}
+
+.card .component{
+    background-color: var(--Navy-900);
+    width: 100%;
+    height: auto;
+    /* margin-top: 1.25rem; */
+    padding: 1.25rem;
+    height: auto;
+    border-radius: 0.75rem 0.75rem 0.5rem 0.5rem;
+}
+
+.component .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading .title{
+    font-size: 18px;
+}
+
+.heading img{
+    width: 20px;
+    height: 5px;
+}
+
+.time .current{
+    font-size: 3rem;
+    font-weight: 300;
+    padding-top: 0.75rem;
+}
+
+.time .previous{
+    font-size: 1rem;
+    color: var(--Purple-500);
+}
+
+.report{
+    grid-column: 1/1;
+    grid-row: 1/span 2;
+    padding: 0;
+    background-color: var(--Navy-900);
+}
+
+.report .profile{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Purple-600);
+    height: 70%;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.report .profile img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 1.25rem;
+}
+
+.report .profile .text{
+    font-weight: 300;
+    color: var(--Navy-200);
+}
+
+.report .profile .name{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.report ul{
+    padding: 1.25rem 1.25rem 2rem;
+    list-style: none;
+    
+}
+
+.report li:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+
+.report li a{
+    text-decoration: none;
+    color: var(--Purple-500);
+}
+
+.report li a:active{
+    color: var(--Navy-200);
+}
+
+.work{
+    /* padding: 0; */
+    background-color: var(--Orange-300);
+}
+
+.work .back{
+    background-image: url('../../images/icon-work.svg');
+}
+
+.play{
+    background-color: var(--Blue-300);
+}
+
+.play .back{
+    background-image: url('../../images/icon-play.svg');
+}
+
+.study{
+    background-color: var(--Pink-400);
+}
+.study .back{
+    background-image: url('../../images/icon-study.svg');
+}
+
+.exercise {
+    background-color: var(--Green-400);
+}
+
+.exercise .back{
+    background-image: url('../../images/icon-exercise.svg');
+}
+
+.social{
+    background-color: var(--Purple-700);
+}
+
+.social .back{
+    background-image: url('../../images/icon-social.svg');
+}
+
+.self-care{
+    background-color: var(--Yellow-300);
+}
+.self-care .back{
+    background-image: url('../../images/icon-self-care.svg');
+}
