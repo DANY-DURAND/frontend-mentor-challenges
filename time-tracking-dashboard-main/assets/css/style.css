@@ -195,3 +195,25 @@ body{
 .self-care .back{
     background-image: url('../../images/icon-self-care.svg');
 }
+
+@media (max-width: 805px){
+    body{
+        height: auto;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .card{
+        width: 15rem;
+    }
+
+    .report .profile{
+        display: flex;
+        /* flex-direction: row; */
+    }
+    
+}
