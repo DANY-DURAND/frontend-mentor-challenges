@@ -9,7 +9,7 @@ const timeStamp = document.getElementById('timestamp');
 const previousTime = document.getElementById('previous');
 const hoursTxt = document.getElementById('hours');
 
-let data = 'http://127.0.0.1:5501/time-tracking-dashboard-main/data.json'
+let data = './data.json'
 
 let info =[]
 
