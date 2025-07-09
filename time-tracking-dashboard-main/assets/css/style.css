@@ -203,21 +203,99 @@ body{
 @media (max-width: 805px){
     body{
         height: auto;
+        min-height: 100vh;
+        padding: 2rem 0;
     }
 
     .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
     }
 
-    .card{
-        width: 15rem;
+    .card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: 120px; /* Set a fixed height for the card */
+        position: relative;
+        overflow: visible;
+    }
+
+    .card .back {
+        height: 32%; /* 2:5 ratio (2/(2+3) ≈ 0.4, 2:3 ratio use 40%) */
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .card .component {
+        position: absolute;
+        top: 24%; /* Slightly overlap the back */
+        left: 0;
+        width: 100%;
+        height: 76%; /* Fill the rest */
+        border-radius: 0.75rem 0.75rem 0.5rem 0.5rem;
+        background-color: var(--Navy-900);
+        padding: 1.25rem 1rem 1rem 1rem;
+        box-sizing: border-box;
+    }
+
+    .report{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1.5rem;
     }
 
     .report .profile{
-        display: flex;
-        /* flex-direction: row; */
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+        border-radius: 0.5rem 0.5rem 0 0;
     }
-    
+
+    .report .profile img{
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+
+    .report .profile .text,
+    .report .profile .name {
+        margin-bottom: 0;
+    }
+
+    .report ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1.25rem 1rem 1.25rem;
+        border-radius: 0 0 0.5rem 0.5rem;
+        background: var(--Navy-900);
+    }
+
+    .report li{
+        margin-bottom: 0;
+    }
+
+    .report li a{
+        font-size: 1rem;
+    }
+
+    .card .back{
+        height: auto;
+    }
+
+    .card .component{
+        padding: 1.25rem 1rem 1rem 1rem;
+        height: 85%;
+    }
+
+    .time .current{
+        font-size: 2rem;
+        padding-top: 0.5rem;
+    }
 }
