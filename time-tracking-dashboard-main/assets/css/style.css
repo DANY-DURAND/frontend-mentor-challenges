@@ -153,6 +153,10 @@ body{
     color: var(--Navy-200);
 }
 
+.timeframes{
+    padding-bottom: 0.75rem;
+}
+
 .work{
     /* padding: 0; */
     background-color: var(--Orange-300);
