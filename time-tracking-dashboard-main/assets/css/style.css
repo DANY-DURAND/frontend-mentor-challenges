@@ -112,7 +112,7 @@ body{
 
 .report .profile img{
     width: 4rem;
-    height: 4rem;
+    /* height: 4rem; */
     border-radius: 50%;
     border: 3px solid #fff;
     margin-bottom: 1.25rem;
@@ -201,6 +201,12 @@ body{
 }
 
 @media (max-width: 805px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
     body{
         height: auto;
         min-height: 100vh;
@@ -210,92 +216,78 @@ body{
     .container{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        width: 100%;
-        max-width: 375px;
-        margin: 0 auto;
+        gap: 1.35rem;
     }
 
-    .card {
-        width: 100%;
-        min-width: 0;
-        max-width: 100%;
-        height: 120px; /* Set a fixed height for the card */
-        position: relative;
-        overflow: visible;
+    .card{
+        width: 20rem;
+        border-radius: 1rem;
     }
-
-    .card .back {
-        height: 32%; /* 2:5 ratio (2/(2+3) ≈ 0.4, 2:3 ratio use 40%) */
-        border-radius: 0.5rem 0.5rem 0 0;
-    }
-
-    .card .component {
-        position: absolute;
-        top: 24%; /* Slightly overlap the back */
-        left: 0;
-        width: 100%;
-        height: 76%; /* Fill the rest */
-        border-radius: 0.75rem 0.75rem 0.5rem 0.5rem;
-        background-color: var(--Navy-900);
-        padding: 1.25rem 1rem 1rem 1rem;
-        box-sizing: border-box;
-    }
-
-    .report{
-        width: 100%;
-        padding: 0;
-        margin-bottom: 1.5rem;
-    }
-
-    .report .profile{
-        flex-direction: row;
-        align-items: center;
-        height: auto;
-        padding: 1.25rem 1.25rem 1.25rem 1.25rem;
-        border-radius: 0.5rem 0.5rem 0 0;
-    }
-
-    .report .profile img{
-        width: 3rem;
-        height: 3rem;
-        margin-bottom: 0;
-        margin-right: 1rem;
-    }
-
-    .report .profile .text,
-    .report .profile .name {
-        margin-bottom: 0;
-    }
-
-    .report ul{
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 1.25rem 1rem 1.25rem;
-        border-radius: 0 0 0.5rem 0.5rem;
-        background: var(--Navy-900);
-    }
-
-    .report li{
-        margin-bottom: 0;
-    }
-
-    .report li a{
-        font-size: 1rem;
+    
+    .card:not(.report){
+        height: 8rem;
     }
 
     .card .back{
-        height: auto;
+        height: 20%;
     }
 
     .card .component{
-        padding: 1.25rem 1rem 1rem 1rem;
-        height: 85%;
+        height: 80%;
+    }
+    
+    .profile{
+        padding: 2rem 0rem;
+    }
+
+    .report .profile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .report .profile img{
+        margin-bottom: 0;
+    }
+
+    .profile .reporter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile .reporter .text{
+        font-size: .85rem;
+    }
+    .profile .reporter .name{
+        font-size: 1.5rem;
+    }
+
+    .timeframes ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 1.25rem;
+    }
+
+    .timeframes li:not(:last-child){
+        margin: 0;
+    }
+
+    .time{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0rem;
     }
 
     .time .current{
-        font-size: 2rem;
-        padding-top: 0.5rem;
+        font-size: 1.75rem;
+        padding: 0;
+    }
+
+    .time .previous{
+        font-size: 1rem;
     }
 }
