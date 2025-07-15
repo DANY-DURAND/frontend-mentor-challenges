@@ -70,7 +70,7 @@ body{
 }
 
 .card .component:hover{
-    background-color: hsl(235, 54%, 54%);
+    background-color: #33397a;
 }
 
 .component .heading{
