@@ -1,44 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div>
+    <img src="./images/logo.svg" alt="">
   </div>
+  <form action="" method="post" class="form">
+    <div class="form-section">
+
+      <div class="form-group form-group-bill">
+
+        <div class="form-label-container">
+          <label class="form-group-label" for="bill">Bill</label>
+          <span id="bill-warning" class="form-warning warning-bill">Can't be empty</span>
+        </div>
+
+        <input type="number" name="bill" id="bill" class="form-input form-input-bill" placeholder="0">
+      </div>
+
+      <fieldset class="form-group form-group-tips">
+
+        <legend class="form-group-label">Select Tip %</legend>
+
+        <div class="form-tip-selector">
+          <label for="tip-5" class="tip-label">
+            <input type="radio" id="tip-5" name="tip-percent" value="5" class="input-tip">
+            5%
+          </label>
+          <label for="tip-10" class="tip-label">
+            <input type="radio" id="tip-10" name="tip-percent" value="10" class="input-tip">
+            10%
+          </label>
+
+          <label for="tip-15" class="tip-label">
+            <input type="radio" id="tip-15" name="tip-percent" value="15" class="input-tip">
+            15%
+          </label>
+
+          <label for="tip-25" class="tip-label">
+            <input type="radio" id="tip-25" name="tip-percent" value="25" class="input-tip">
+            25%
+          </label>
+          <label for="tip-50" class="tip-label">
+            <input type="radio" id="tip-50" name="tip-percent" value="50" class="input-tip">
+            50%
+          </label>
+
+          <label for="tip-custom" class="tip-label tip-custom">
+            <input type="number" name="tip-percent" id="tip-custom" placeholder="Custom" class="form-input input-custom">
+          </label>
+
+        </div>
+
+      </fieldset>
+
+      <div class="form-group people-form">
+        <div class="form-label-container">
+          <label class="form-group-label" for="people">Number of People</label>
+          <span id="bill-warning" class="form-warning warning-people">Can't be empty</span>
+        </div>
+
+        <input type="number" name="people" id="people" class="form-input form-input-people" placeholder="0">
+      </div>
+
+    </div>
+
+    <div class="form-results">
+
+      <div class="results-section">
+        <div class="result">
+          <label for="tip-amount" class="result-label">
+            Tip Amount
+            <span>/person</span>
+          </label>
+
+          <output id="tip-amount" class="result-output">$0.00</output>
+        </div>
+
+        <div class="result">
+          <label for="total" class="result-label">
+            Total
+            <span>/person</span>
+          </label>
+
+          <output id="total" class="result-output">$0.00</output>
+        </div>
+      </div>
+
+      <button type="reset" class="form-button">Reset</button>
+
+    </div>
+  </form>
 </body>
+
 </html>
