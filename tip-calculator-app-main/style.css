@@ -38,7 +38,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--White);
-    padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+    padding: 2rem 1.5rem 1.5rem 2rem;
     border-radius: 1rem;
     gap: 2rem;
 }
@@ -82,6 +82,9 @@ body{
     font-weight: 700;
     cursor: pointer;
 }
+.form-input input[type="number"] {
+    appearance: textfield;
+}
 
 .form-input:focus{
     outline: 2px solid var(--Green-400);
@@ -93,6 +96,7 @@ body{
     color: var(--Green-900);
     opacity: 0.35;
 }
+
 
 .form-input-bill,
 .form-input-people{
@@ -120,17 +124,99 @@ body{
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: .5rem;
 }
 
-.tip-label{
-    width: 10rem;
+
+.tip-label:not(.tip-custom){
+    width: 8rem;
     font-weight: 700;
     text-align: center;
     color: var(--White);
     cursor: pointer;
     background-color: var(--Green-900);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.3125rem;
+    font-size: 24px;
 }
-.input-custom{
-    border: none;
+.tip-custom{
+    width: 8rem;
+}
+input[type="radio"] {
+    
+  z-index: -1;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: inherit;
+  /* color: currentColor; */
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3125rem;
+  /* border: 1px solid currentColor; */
+  cursor: pointer;
+}
+
+.form-results{
+    background-color: var(--Green-900);
+    color: var(--White);
+    line-height: 1.5rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* align-content: space-between; */
+    /* width: auto; */
+    height: 100%;
+    padding-inline: 2.5rem;
+    padding-block: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.result{
+    /* margin-bottom: 2rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 3rem;
+}
+
+.result-label{
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.result-label span{
+    font-size: 13px;
+    line-height: 1;
+    color: var(--Grey-500);
+}
+
+.result-output{
+    font-size: 3rem;
+    line-height: 4.4375rem;
+    letter-spacing: -1;
+    color: var(--Green-400);
+}
+
+.form-button{
+    width: 100%;
+    position: relative;
+    bottom: -85px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    border: transparent;
+    color: var(--Green-900);
+    background-color: var(--Green-400);
+    border-radius: 0.3125rem;
 }
