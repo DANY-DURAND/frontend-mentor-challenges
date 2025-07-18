@@ -175,6 +175,11 @@ input[type="radio"] {
     border-radius: 0.5rem;
 }
 
+input[type='radio']:focus{
+    color: var(--Green-900);
+    background-color: var(--Green-400);
+}
+
 .result{
     /* margin-bottom: 2rem; */
     display: flex;
