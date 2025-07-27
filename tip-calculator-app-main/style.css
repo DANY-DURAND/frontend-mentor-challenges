@@ -92,7 +92,7 @@ body{
     border-color: var(--Error);
 }
 
-.form-input input[type="number"] {
+input[type="number"] {
     appearance: textfield;
 }
 
